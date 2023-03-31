@@ -1,16 +1,20 @@
 name: Build and Test
 
 on:
-  push:
-    branches: 
-      - main
+
 
   # This allows you to trigger the workflow manually on the UI
   workflow_dispatch:
+    inputs:
+      environment:
+        description: 'what env to use'     
+        required: true
+        default: 'andrew-sandbox'
 
 jobs:
   build:
-    name: Build
+    name: deploy
+    environment: ${{ github.event.inputs.environment }}
 
     strategy:
       # Note: some parameters are commented out on purpose, just to give an example how the matrix can be used. We will are skipping them to make it faster.
