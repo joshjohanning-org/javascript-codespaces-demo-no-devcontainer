@@ -30,6 +30,7 @@ jobs:
     runs-on: ${{ matrix.os }}
 
     steps:
+      - run: echo "${{ vars.MY_VAR}}"
       - name: Checkout
         uses: actions/checkout@v3
 
