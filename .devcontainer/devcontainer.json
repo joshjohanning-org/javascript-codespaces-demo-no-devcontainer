@@ -1,29 +1,25 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/universal
 {
-	"name": "Default Linux Universal",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/universal:2-linux",
-
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	"features": {},
-
+    "name": "Default Linux Universal",
+    // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+    "image": "mcr.microsoft.com/devcontainers/universal:2-linux",
+    // Features to add to the dev container. More info: https://containers.dev/features.
+    "features": {},
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
-    "forwardPorts": [4000],
-
+    "forwardPorts": [
+        4000
+    ],
     "portsAttributes": {
         "4000": {
             "label": "Preview"
         }
     },
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "uname -a",
-	"postAttachCommand": ".devcontainer/postAttachCommand.sh",
-
-	// Configure tool-specific properties.
-	// "customizations": {},
-
+    // Use 'postCreateCommand' to run commands after the container is created.
+    // "postCreateCommand": "uname -a",
+    "postAttachCommand": ".devcontainer/postAttachCommand.sh",
+    // Configure tool-specific properties.
+    // "customizations": {},
     "customizations": {
         "vscode": {
             "settings": {},
@@ -31,8 +27,8 @@
             "extensions": [
                 "GitHub.copilot",
                 "GitHub.copilot-chat",
-				"github.vscode-github-actions",
-				"ms-azuretools.vscode-azurestorage"
+                "github.vscode-github-actions",
+                "ms-azuretools.vscode-azurestorage"
             ]
         },
         "codespaces": {
@@ -46,8 +42,9 @@
             }
         }
     },
-    "hostRequirements": {"storage": "64gb"}
-
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+    "hostRequirements": {
+        "storage": "64gb"
+    }
+    // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+    // "remoteUser": "root"
 }
