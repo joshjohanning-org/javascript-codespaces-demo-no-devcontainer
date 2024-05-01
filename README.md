@@ -1,6 +1,6 @@
 [![Build and Test](../../actions/workflows/build_and_test.yml/badge.svg)](../../actions/workflows/build_and_test.yml)
 
-# Welcome to GitHub Universe 2022 Workshop
+# Welcome to GitHub Universe Workshop
 
 Congratulations on kickstarting your personal repository for `Build a web app with Codespaces and deploy it to Microsoft Azure with GitHub Actions` workshop.
 
